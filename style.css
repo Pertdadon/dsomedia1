@@ -53,13 +53,31 @@ header .menu_side h1 {
     color: #fff;
 }
 
-header .menu_side .playlist {
+header .menu_side, .playlist {
     margin: 40px 0px 20px;
 }
 
-.menu_side .playlist h4 {
+header .menu_side, .playlist h4 {
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
     color: #4c5262;
+    transition: .3s linear;
+}
+
+header .menu_side, .playlist h4:hover {
+color: #fff;  
+}
+
+header .menu_side, .playlist h4 span {
+    position: relative;
+}
+
+header .menu_side, .playlist h4 span::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50%;
 }
