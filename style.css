@@ -169,7 +169,7 @@ header .master_play .wave {
     align-items: center;
     padding: 0px 20px;width: 30px;
     height: 30px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     padding-bottom: 5px;
     display: flex;
     align-items: flex-end;
@@ -181,5 +181,40 @@ header .master_play .wave, .wave1 {
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
     background: #36e2ec;
-    animation: wave .2s linear infinite;
+    animation: unset;
+}
+
+header .master_play .wave, .wave1:nth-child(2) {
+    height: 13px;
+    /* animation-delay: .4s; */
+}
+
+header .master_play .wave, .wave1:nth-child(3) {
+    height: 8px;
+    /* animation-delay: .8s; */
+}
+/* Javascript class wave */
+header .master_play .active2, .wave1 {
+    animation: wave .5s linear infinite;
+}
+
+header .master_play .active2, .wave1:nth-child(3) {
+    animation-delay: .4s;
+}
+
+header .master_play .active2, .wave1:nth-child(3) {
+    animation-delay: .8s;
+}
+
+
+@keyframes wave {
+    0% {
+        height: 10px;
+    }
+    50% {
+        height: 15px;
+    }
+    0% {
+        height: 10px;
+    }
 }
