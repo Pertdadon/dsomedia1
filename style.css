@@ -90,8 +90,8 @@ header .menu_side, .playlist .active .bi{
     margin-right: 20px;
 }
 header .menu_side, .menu_song {
-    width: 150%;
-    height: 320px;
+    width: 100%;
+    height: 370px;
     border: 1px solid #fff;
     margin-top: 40px; 
 }
@@ -105,10 +105,10 @@ header .menu_side, .menu_song li{
     cursor: pointer;
     transition: .3s linear;
 }
-header .menu_side, .menu_song li:hover{
-    background: rgb(105, 105, 170,.1);
+header .menu_side, .menu_song, li:hover{
+    background: rgba(134, 134, 173, 0.1);
 }
-header .menu_side, .menu_song li span {
+header .menu_side, .menu_song, li span {
     font-size: 12px;
     font-weight: 600;
     color: #4c5262;
@@ -118,11 +118,11 @@ header .menu_side, .menu_song li img {
     height: 32px;
     margin-left: 25px;   
 }
-header .menu_side, .menu_song li h5 {
+header .menu_side, .menu_song, li h5 {
     font-size: 11px;
     margin-left: 15px;
 }
-header .menu_side, .menu_song li .subtitle {
+header .menu_side, .menu_song, li .subtitle {
     font-size: 9px;
     color: #4c5262;
 }
@@ -137,7 +137,7 @@ header .master_play {
     align-items: center;
     padding: 0px 20px;
 }
-header .master_play .wave {
+header .master_play, .wave {
     display: flex;
     align-items: center;
     padding: 0px 20px;width: 30px;
@@ -148,7 +148,7 @@ header .master_play .wave {
     align-items: flex-end;
     margin-right: 10px;
 }
-header .master_play .wave, .wave1 {
+header .master_play, .wave, .wave1 {
     width: 3px;
     height: 10px;
     margin-right: 3px;
@@ -156,22 +156,22 @@ header .master_play .wave, .wave1 {
     background: #36e2ec;
     animation: unset;
 }
-header .master_play .wave, .wave1:nth-child(2) {
+header .master_play, .wave, .wave1:nth-child(2) {
     height: 13px;
     /* animation-delay: .4s; */
 }
-header .master_play .wave, .wave1:nth-child(3) {
+header .master_play, .wave, .wave1:nth-child(3) {
     height: 8px;
     /* animation-delay: .8s; */
 }
 /* Javascript class wave */
-header .master_play .active2, .wave1 {
+header .master_play, .active2, .wave1 {
     animation: wave .5s linear infinite;
 }
-header .master_play .active2, .wave1:nth-child(3) {
+header .master_play, .active2, .wave1:nth-child(3) {
     animation-delay: .4s;
 }
-header .master_play .active2, .wave1:nth-child(3) {
+header .master_play, .active2, .wave1:nth-child(3) {
     animation-delay: .8s;
 }
 @keyframes wave {
@@ -181,49 +181,49 @@ header .master_play .active2, .wave1:nth-child(3) {
     50% {
         height: 15px;
     }
-    0% {
+    100% {
         height: 10px;
     }
 }
-header.master_play img {
+header.master_play, img {
     width: 35px;
     height: 35px;
 }
-header.master_play h5 {
+header.master_play, h5 {
     width: 130px;
-   font-size: 13px;
-   margin-left: 15px;
-   color: #fff;
-   line-height: 15px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 15px;
 }
-header.master_play h5 .subtitle {
+header.master_play, h5, .subtitle {
     font-size: 11px;
     color: #4c5262;
 }
- header.master_play h5 .icon {
+ header.master_play, h5, .icon {
    font-size: 20px;
    color: #fff;
    margin: 0px 20px 0px 40px;
 }
 
-header.master_play h5 .subtitle {
+header.master_play, h5, .subtitle {
     cursor: pointer;
     outline: none;    
 }
-header .master_play .icon, .bi:nth-child(2) {
+header .master_play, .icon, .bi:nth-child(2) {
 border: 1px solid rgb(105, 105, 170,.1);
 border-radius: 50%;
 padding: 1px 3px 0px 6px;
 margin: 0px 5px;
 transition: .3s linear;
 }
-header .master_play span {
+header .master_play, span {
     color: #fff;
     width: 32px;
     font-size: 11px;
     font-weight: 400;
 }
-header .master_play #currentStart {
+header .master_play, #currentStart {
     margin: 0px 0px 0px 20px;
 }
 header .master_play, .bar {
