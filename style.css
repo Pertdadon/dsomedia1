@@ -62,7 +62,7 @@ header .menu_side, .playlist h4 span::before {
     position: absolute;
     width: 4px;
     height: 4px;
-    border: 2px solid #4c5262;
+    border: 2px solid #4c5262;<
     border-radius: 50%;
     top: -4px;
     transition: .3s linear;
@@ -301,7 +301,7 @@ header .master_play, .bar input{
     opacity: 0;
 }
 header .master_play, .vol{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 2px;
     margin-left: 50px;
